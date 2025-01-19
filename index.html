@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form task</title>
+</head>
+<body>
+    <form method="post" action="index.html">
+        <fieldset>
+            <legend>Forms</legend>
+        
+        <div>
+        <label for="name">Firstname:</label>
+        <input id="name" type="text" name="firstname" autofocus/> <br/>
+        </div>
+        <br/>
+        <div>
+        <label for="Mname">Middlename:</label>
+        <input id="Mname" type="text" name="middlename"/> <br/>
+        </div>
+        <br/>
+        <div>
+            <label for="Lname">Lastname:</label>
+            <input id="Lname" type="text" name="lastname"/> <br/>
+            </div>
+            <br/>
+            <div>
+                <label for="opt">Course: </label> <br/>
+    
+                <select name="opt" id="opt">
+                    <option id="opt" value="Course" selected>Course</option>
+                  <option id="opt" value="BCA">BCA</option>
+                  <option id="opt" value="BBA">BBA</option>
+                  <option id="opt" value="B.Tech">B.Tech</option>
+                  <option id="opt" value="MBA">MBA</option>
+                  <option id="opt" value="MCA">MCA</option>
+                  <option id="opt" value="M.Tech">M.Tech</option>
+                </select>
+            </div>
+            <br/>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gen" value="Male"/> Male
+            <input type="radio" name="gen" value="Female"/> Female
+            <input type="radio" name="gen" value="Others"/> Others
+        </div>
+        <br/>
+        <div>
+            <label for="date">DOB: </label><input type="datetime-local">
+        </div>
+        <br/>
+        <div>
+            <label for="phone">Phone: </label><input type="text" size="2" value="+91" disabled> <input type="tel">
+        </div>
+        <br/>
+        <div>
+            <label for="add">Address:</label>
+            <br>
+            <textarea id="add" name="address" rows="5" cols="80">
+                </textarea>
+        </div>
+        <br/>
+        <div>
+        <label for="email">Email: </label><input id="email" type="email" name="email" value="" /> <br/>
+        </div>
+        <br/>
+        <div>
+        <label for="password">Password: </label><input id="password" type="password" name="password" value="" /> <br/>
+        </div>
+        <br/>
+        <div>
+            <label for="password">Re-type Password: </label><input id="password" type="password" name="password" value="" /> <br/>
+            </div>
+            <br/>
+            <div>
+                <input type="checkbox"/><label for="">Agree to terms and conditions</label> 
+            </div>
+            <br/>
+            <div>
+                <label for="">Choose File</label> <input type="file">
+            </div>
+            <br/>
+            <div>
+                <label for="">Choose Color</label> <input type="color">
+            </div>
+            <br/>
+            <div>
+                <button type="reset" name="reset" >Reset</button>
+                <button type="submit" name="submit" >Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
